@@ -1,11 +1,10 @@
-# Event Manager
+# Todo Lista Alkalmazás
 
 ## Funkciók
-- Események hozzáadása különböző típusokkal (pl. meeting, task, reminder).
-- Események törlése időpont vagy típus alapján.
-- Események keresése típus vagy időpont szerint.
-- Események rendezése időpont alapján.
-- Egyszerű API, amely lehetővé teszi az események gyors kezelését.
+- Feladatok hozzáadása a listához.
+- Feladatok megtekintése számozott listában.
+- Feladatok eltávolítása a lista sorszáma alapján.
+- Egyszerű konzolos menürendszer a funkciók eléréséhez.
 
 ## Telepítés
 
@@ -13,28 +12,74 @@
 
 Győződj meg róla, hogy a következő programok telepítve vannak a rendszeredre:
 - [Java JDK 8 vagy újabb](https://adoptopenjdk.net/)
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows) ha kell egy IDE 
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows) vagy bármilyen más Java IDE, ha szükséges.
 
 ### Telepítés lépései
 
-1. Klónozd a projektet a következő parancs segítségével:
+1. Klónozd a projektet a GitHub-ról (példa URL):
    ```bash
-   git clone https://github.com/username/event-manager.git
+   git clone https://github.com/doomhyena/java-task.git
    ```
 
 2. Navigálj a projekt mappájába:
    ```bash
-   cd event-manager
+   cd Solution
    ```
 
-3. (Opcionális) Fordítsd le és futtasd a projektet Maven-nel:
+3. Fordítsd le a projektet (opcionális lépés, ha nem IDE-t használsz):
    ```bash
-   mvn clean install
+   javac Main.java
    ```
 
-4. Futtasd a programot közvetlenül a `main` metódussal:
+4. Futtasd az alkalmazást:
    ```bash
-   java -cp target/event-manager-1.0-SNAPSHOT.jar EventApp
+   java Main
    ```
 
-   **Vagy** közvetlenül futtathatod az alkalmazást IDE-ben (pl. IntelliJ IDEA, Eclipse).
+   **Vagy** nyisd meg a projektet az IDE-ben (pl. IntelliJ IDEA, Eclipse), és futtasd a `main` metódust.
+
+## Használat
+
+1. Indítás után a konzolon megjelenik egy menü:
+   - 1: Új feladat hozzáadása.
+   - 2: Feladatok megjelenítése.
+   - 3: Feladat eltávolítása.
+   - 4: Kilépés.
+
+2. Válassz egy opciót a menüből a megfelelő szám beírásával és az **Enter** megnyomásával.
+
+3. Kövesd a program utasításait a feladatok kezeléséhez.
+
+4. A program addig fut, amíg a kilépési opciót nem választod.
+
+## Példa használat
+
+### Feladat hozzáadása
+Adja meg a feladat szövegét:
+```plaintext
+Írj egy dokumentációt.
+```
+
+### Feladatok megtekintése
+A lista megjelenítése a következő formában:
+```plaintext
+--- Feladatok ---
+1. Írj egy dokumentációt.
+```
+
+### Feladat eltávolítása
+Adja meg az eltávolítani kívánt feladat számát:
+```plaintext
+1
+```
+
+A rendszer visszaigazolja:
+```plaintext
+Feladat eltávolítva!
+```
+
+### Kilépés
+A menüben válaszd a 4-es opciót, hogy kilépj a programból:
+```plaintext
+Szia!
+```
