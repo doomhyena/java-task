@@ -23,7 +23,7 @@ Győződj meg róla, hogy a következő programok telepítve vannak a rendszered
 
 2. Navigálj a projekt mappájába:
    ```bash
-   cd todo-list
+   cd Solution
    ```
 
 3. Fordítsd le a projektet (opcionális lépés, ha nem IDE-t használsz):
