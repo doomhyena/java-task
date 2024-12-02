@@ -18,7 +18,7 @@ Győződj meg róla, hogy a következő programok telepítve vannak a rendszered
 
 1. Klónozd a projektet a GitHub-ról (példa URL):
    ```bash
-   git clone https://github.com/username/todo-list.git
+   git clone https://github.com/doomhyena/java-task.git
    ```
 
 2. Navigálj a projekt mappájába:
