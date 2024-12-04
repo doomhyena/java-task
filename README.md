@@ -23,15 +23,11 @@ Győződj meg róla, hogy a következő programok telepítve vannak a rendszered
 
 2. Navigálj a projekt mappájába:
    ```bash
-   cd Solution
+   cd java-task
+   
    ```
 
-3. Fordítsd le a projektet (opcionális lépés, ha nem IDE-t használsz):
-   ```bash
-   javac Main.java
-   ```
-
-4. Futtasd az alkalmazást:
+3. Futtasd az alkalmazást:
    ```bash
    java Main
    ```
